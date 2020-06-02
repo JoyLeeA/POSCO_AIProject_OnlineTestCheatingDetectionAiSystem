@@ -198,7 +198,7 @@ def main(args):
             class_index = pred[0]
             class_probability = pred_prob[0,class_index] * 100
             predict_names = out_encoder.inverse_transform(pred)
-            text = 'Predicted: %s (%.3f%%)' % (predict_names[0], class_probability)
+            text = '%s (%.3f%%)' % (predict_names[0], class_probability)
             
             #add the name to frame but only if the pred is above a certain threshold
             if (class_probability > 70):

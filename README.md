@@ -1,5 +1,9 @@
 # POCAS
 ---
+### OVERVIEW
+![ex_screenshot](./Warning/readme1.png)
+![ex_screenshot](./Warning/readme2.png)
+
 ### POstech Cheating detection Ai System
 * 시선 및 모션 인식, 그리고 안면 인증을 통한 온라인 시험 부정 행위 방지 시스템
 
@@ -44,7 +48,7 @@
 3. facenet.py를 실행하여 embedding이 수행된 새로운 npz파일을 만듭니다.(FreindsFaceEmbeddingData.npz)
 4. SVMclassifier.py를 실행하여 얼굴을 분류합니다. (test 용도)
 #### 실행
- * python posca.py (Main)
+ * python pocas.py (Main)
  #### 작동원리
  * 관리자는 시험 시간을 설정 할 수 있음 (Minute 단위)
  * 사용자의 사진 데이터를 training하여 신원 확인을 함
