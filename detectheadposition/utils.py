@@ -1,11 +1,11 @@
 #   Headpose Detection Utils
 #   Written by JongHa
-#   Last Update: 2020.05.29
+#   Last Update: 2020.06.02
 
 import numpy as np
 import cv2
 
-
+# Define Color
 class Color():
     blue = (255, 0, 0)
     green = (0, 255, 0)

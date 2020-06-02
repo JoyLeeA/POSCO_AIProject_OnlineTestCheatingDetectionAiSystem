@@ -1,7 +1,11 @@
+#   facenet
+#   Modified by Jongha
+#   Last Update: 2020.06.02
+
 import numpy as np
 from keras.models import load_model
 
-model = load_model('models/facenet_keras.h5')
+model = load_model('./models/facenet_keras.h5')
 print('model loaded')
 
 # get the face embedding for one face
@@ -42,6 +46,6 @@ print(newValX.shape)
 
 np.savez_compressed('FriendsFaceEmbeddingData.npz', newTrainX, trainy, newValX, valy)
 
-# Note: now we have face embeddings for each face image
+# from now on, we get face embeddings for each face image
 # now we can use these to make predictions using an SVM. 
-# Next, open SVMclassifier.p
+# Next, open SVMclassifier.

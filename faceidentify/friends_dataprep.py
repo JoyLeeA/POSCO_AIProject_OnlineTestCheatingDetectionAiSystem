@@ -1,9 +1,7 @@
-'''
-This Program is a Face Identification model,
-I built to detect my friends faces. The system uses
-MTCNN to detect faces, then we use the FaceNet model
-and an SVM to predict the identity of the faces
-'''
+#   Data Prepare
+#   Modified by Jongha
+#   Last Update: 2020.06.02
+
 from os import listdir
 from os.path import isdir
 from matplotlib import pyplot
@@ -11,10 +9,9 @@ from keras.models import load_model
 import numpy as np
 from PIL import Image
 from mtcnn.mtcnn import MTCNN
-model = load_model('models/facenet_keras.h5')
+model = load_model('./models/facenet_keras.h5')
 print(model.inputs)
 print(model.outputs)
-
 
 def extract_face(filename, req_size=(160, 160)):
     # load image from file
@@ -27,7 +24,7 @@ def extract_face(filename, req_size=(160, 160)):
     # detect faces in the image
     results = detector.detect_faces(pixels)
 
-    print(filename)
+    print(filename) # check file name
     if results == []:
         return np.zeros((160, 160, 3))
     # extract the bounding box from the first face
@@ -44,7 +41,6 @@ def extract_face(filename, req_size=(160, 160)):
     face_array = np.asarray(image)
     print("extract face produces", face_array.shape)
     return face_array
-
 
 #plot all the faces in the images in this directory
 def plot_images(folder, plot_h, plot_w):
@@ -83,7 +79,7 @@ def load_dataset(direc):
     #for every class directory in this train/val directory
     for subdir in listdir(direc):
 
-        path = direc + subdir + '/'
+        path = direc + subdir + '/' # Define path
         #if it is a file and not a dir then skip
         if not isdir(path):
             continue

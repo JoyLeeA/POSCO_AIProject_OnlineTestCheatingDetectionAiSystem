@@ -1,6 +1,6 @@
 #   Headpose Detection
 #   Modified by Jongha
-#   Last Update: 2020.05.29
+#   Last Update: 2020.06.02
 
 
 import argparse
@@ -10,11 +10,11 @@ import numpy as np
 import os
 import os.path as osp
 
-from timer import Timer
-from utils import Annotator
+from detectheadposition.timer import Timer
+from detectheadposition.utils import Annotator
 
 
-t = Timer()
+t = Timer() # call Timer
 
 class HeadposeDetection():
 
@@ -61,7 +61,7 @@ class HeadposeDetection():
         [33, 36, 39, 42, 45] # 5 points
     ]
 
-    def __init__(self, lm_type=1, predictor="model/shape_predictor_68_face_landmarks.dat", verbose=True):
+    def __init__(self, lm_type=1, predictor="model/shape_predictor_68_face_landmarks.dat", verbose=True): #init face predictor
         self.bbox_detector = dlib.get_frontal_face_detector()        
         self.landmark_predictor = dlib.shape_predictor(predictor)
 

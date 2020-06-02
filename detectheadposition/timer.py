@@ -1,5 +1,6 @@
 #   Timer
-#   Written by JongHa
+#   Modified by Jongha
+#   Last Update: 2020.06.02
 
 from __future__ import print_function
 import time

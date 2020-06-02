@@ -11,14 +11,14 @@ from keras.models import load_model
 from mtcnn.mtcnn import MTCNN
 from PIL import Image
 from sklearn.svm import SVC
-from SVMclassifier import model as svm
-from SVMclassifier import out_encoder
+from faceidentify.SVMclassifier import model as svm
+from faceidentify.SVMclassifier import out_encoder
 
 #### FOR GAZE AND MOTION ####
 import argparse
 import cv2
 import os.path as osp
-import headpose
+from detectheadposition import headpose
 from gaze_tracking import GazeTracking
 
 #### FOR WARNING ####
@@ -75,8 +75,8 @@ def notnegative(x):
 # main function
 def main(args):
     filename = args["input_file"]
-    faceCascade = cv2.CascadeClassifier('/Users/joylee/Downloads/AI/haarcascades/haarcascade_frontalface_default.xml')
-    model = load_model('/Users/joylee/Downloads/AI/models/facenet_keras.h5')
+    faceCascade = cv2.CascadeClassifier('models/haarcascade_frontalface_default.xml')
+    model = load_model('models/facenet_keras.h5')
 
     if filename is None:
         isVideo = False
@@ -231,6 +231,6 @@ if __name__ == '__main__':
     parser.add_argument('-o', metavar='FILE', dest='output_file', default=None, help='Output video.')
     parser.add_argument('-wh', metavar='N', dest='wh', default=[720, 480], nargs=2, help='Frame size.')
     parser.add_argument('-lt', metavar='N', dest='landmark_type', type=int, default=1, help='Landmark type.')
-    parser.add_argument('-lp', metavar='FILE', dest='landmark_predictor', default='/Users/joylee/Downloads/AI/gaze_tracking/trained_models/shape_predictor_68_face_landmarks.dat', help="Landmark predictor data file.")
+    parser.add_argument('-lp', metavar='FILE', dest='landmark_predictor', default='gaze_tracking/trained_models/shape_predictor_68_face_landmarks.dat', help="Landmark predictor data file.")
     args = vars(parser.parse_args())
     main(args)

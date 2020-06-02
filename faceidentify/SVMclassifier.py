@@ -1,3 +1,7 @@
+#   SVMclassifier
+#   Modified by Jongha
+#   Last Update: 2020.06.02
+
 import numpy as np
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
@@ -46,6 +50,7 @@ random_face_name = out_encoder.inverse_transform([random_face_class])
 samples = random_face_emb.reshape(-1, random_face_emb.shape[0])
 yhat_class = model.predict(samples)
 yhat_prob = model.predict_proba(samples)
+
 # get name
 class_index = yhat_class[0]
 class_probability = yhat_prob[0,class_index] * 100
@@ -53,6 +58,5 @@ predict_names = out_encoder.inverse_transform(yhat_class)
 print('Predicted: %s (%.3f)' % (predict_names[0], class_probability))
 print('Expected: %s' % random_face_name[0])
 
-# Note: predictions are complete! We can extend this model
-# further by using it to recognze faces in reak time using 
-# a webcam video streams. next, open real_time_face_rec.py
+# We can identify user's face for real time
+# From now on, we can detect user's cheating
