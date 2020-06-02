@@ -1,6 +1,6 @@
 nvidia-docker run -it --rm \
-    -v /data/qhan/Headpose-Detection:/app \
+    -v /data/JoyLeeA/posca:/app \
     -p 1028:1028 \
-    --name headpose-detection-dev \
-    qhan1028/headpose_detection $@
+    --name posca \
+    JoyLeeA/posca $@
     bash

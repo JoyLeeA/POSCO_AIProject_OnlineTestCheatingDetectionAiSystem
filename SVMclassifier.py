@@ -6,7 +6,7 @@ from sklearn.svm import SVC
 from random import choice
 
 
-data = np.load('/Users/joylee/Downloads/face/src/FriendsFaceEmbeddingData.npz')
+data = np.load('FriendsFaceEmbeddingData.npz')
 trainX, trainy, valX, valy = data['arr_0'], data['arr_1'], data['arr_2'], data['arr_3']
 print('Dataset: training examples =', trainX.shape, 'val examples =', valX.shape[0])
 

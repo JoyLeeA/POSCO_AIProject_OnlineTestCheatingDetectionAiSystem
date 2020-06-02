@@ -2,3 +2,6 @@ dlib
 numpy
 opencv-python
 pygame
+keras
+pil
+mtcnn
