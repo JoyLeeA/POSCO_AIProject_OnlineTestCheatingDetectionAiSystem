@@ -10,7 +10,8 @@
 ![ex_screenshot](./documents/readme2.png)
 
 #### demonstration video
-<iframe width="640" height="360" src="https://youtu.be/ON8ppkHHgmA" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+[![Video Label](http://img.youtube.com/vi/ON8ppkHHgmA/0.jpg)](https://www.youtube.com/watch?v=ON8ppkHHgmA&feature=youtu.be)
+* 이미지 클릭시, youtube에서 데모 영상을 시청할 수 있습니다.
 
 ### Project 개요
 * 코로나 사태로 인하여 대부분의 오프라인 시험이 온라인으로 대체되고 있음 (2020.06 기준)
