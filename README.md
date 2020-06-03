@@ -1,8 +1,13 @@
 # POCAS
 ---
 ### OVERVIEW
-![ex_screenshot](./Warning/readme1.png)</br>
-![ex_screenshot](./Warning/readme2.png)
+#### Example Screenshot
+![ex_screenshot](./documents/readme1.png)</br></br></br>
+
+![ex_screenshot](./documents/readme2.png)
+
+#### demonstration video
+[![Video Label](https://youtu.be/ON8ppkHHgmA/0.jpg)](https://youtu.be/ON8ppkHHgmA)
 
 ### POstech Cheating detection Ai System
 * 시선 및 모션 인식, 그리고 안면 인증을 통한 온라인 시험 부정 행위 방지 시스템
@@ -67,6 +72,7 @@
 * 따라서, CPU가 아닌 GPU 환경에서 사용할 것을 권장함
  
 ### Explain Folder
+* documents: 프로젝트를 진행하며 생성된 문서 산출물
 * dataset:  신원 확인을 목적으로 사용자의 얼굴을 학습하기 위한 데이터 셋
 * models: 얼굴 인식을 위한 facenet trained set
 * docker: nvidia GPU 사용 가상 환경 구축
@@ -75,5 +81,3 @@
 * gaze_tracking: 동공 인식과 시선 감지를 위한 코드 (.py)
 * detectheadposition: 얼굴의 움직임을 감지하기 위한 코드(.py)
  
-### Demo
-* 여기다가 우리 유튜브 주소.
