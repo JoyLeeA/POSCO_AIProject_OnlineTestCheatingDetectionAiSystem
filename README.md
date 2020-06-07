@@ -1,16 +1,17 @@
 # POCAS
----
+-----
+### POstech Cheating detection Ai System
+* 시선 및 모션 인식, 그리고 안면 인증을 통한 온라인 시험 부정 행위 방지 시스템
+
 ### OVERVIEW
 #### Example Screenshot
-![ex_screenshot](./documents/readme1.png)</br></br></br>
+![ex_screenshot](./documents/readme1.png)</br></br>
 
 ![ex_screenshot](./documents/readme2.png)
 
 #### demonstration video
-[![Video Label](https://youtu.be/ON8ppkHHgmA/0.jpg)](https://youtu.be/ON8ppkHHgmA)
-
-### POstech Cheating detection Ai System
-* 시선 및 모션 인식, 그리고 안면 인증을 통한 온라인 시험 부정 행위 방지 시스템
+[![Video Label](http://img.youtube.com/vi/ON8ppkHHgmA/0.jpg)](https://www.youtube.com/watch?v=ON8ppkHHgmA&feature=youtu.be)
+* 이미지 클릭시, youtube에서 데모 영상을 시청할 수 있습니다.
 
 ### Project 개요
 * 코로나 사태로 인하여 대부분의 오프라인 시험이 온라인으로 대체되고 있음 (2020.06 기준)
